@@ -1,0 +1,221 @@
+.top-container{
+    padding: 0 5rem;
+    padding-bottom: 4rem;
+    height: 100vh;
+    
+   
+}
+.img{
+    background-image: url('../../img/yellow.jpg');
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.img2{
+    background-image: url('../../img/blue.jpg');
+    height: 90vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    padding: 0 5rem;
+}
+.img button{
+    display: flex;
+    align-items: center;
+    margin-right: 67rem;
+    padding: 1.5rem 2.5rem;
+    background-color: transparent;
+    border: 3
+    px solid black;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services h1{
+    padding: 5rem 0rem;
+}
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    
+}
+.react-icon{
+    background-color: rgba(0, 0, 0, 0.072);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.service p{
+    color: rgba(0, 0, 0, 0.567);
+    font-weight: 600;
+}
+.service h4{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.curated-container{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+
+.first-image{
+  position: relative;
+  height: 379px;
+  width: 300px;
+  background-color: #808080;
+  margin: 30px;
+  border-radius: 20px;
+  transition: 0.8s ease;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+   
+}
+.pic1{
+    background-image: url('../../img/women1.jpg') ;
+
+}
+.pic2{
+    background-image: url('../../img/men1.jpg');
+}
+.pic3{
+    background-image: url('../../img/women2.jpg');
+}
+.pic4{
+    background-image: url('../../img/women3.jpg');
+}
+.first-image:hover{
+    background-size: 400px;
+}
+
+.hover{
+    height: 342px;
+    width: 260px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid white;
+    opacity : 0;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hover:hover{
+    opacity: 1;
+}
+.hover button{
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+/* featured container */
+.featured-item img{
+    width: 200px;
+    height: 250px;
+}
+.featured-products{
+    text-align: center;
+    margin-top: 8rem;
+}
+.item-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.detail p:nth-child(1){
+    font-weight: 600;
+}
+.detail p:nth-child(2){
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.cart-icon button{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* promote container */
+.promote-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.promote{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 70%;
+}
+.promote-left{
+    background-image: url('../../img/woman2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promote-right{
+    background-color: rgb(2, 2, 68);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+/* subscribe container */
+.subscribe-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+.subscribe{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.subscribe h4{
+    color: rgba(0, 0, 0, 0.511);
+}
