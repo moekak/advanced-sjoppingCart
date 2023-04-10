@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './cart.css'
 
 const Cart = () => {
-    const { selected, item, cartItem, addToCart, remove} =useContext(ShopContext);
+    const { selected, item, cartItem, addToCart, remove, total} =useContext(ShopContext);
   return (
     <div className="cart-container">
         <div className="cart-details">
@@ -29,6 +29,7 @@ const Cart = () => {
                                 return(
                                     item.map((item) =>{
                                     if(cartitem.id === item.id){
+                                        const total = item.price * cartitem.quantity
                                         return(
                                             <>
                                             
@@ -44,8 +45,8 @@ const Cart = () => {
                                                             <button onClick={() => remove(item.id)}>-</button>
                                                         </div>
                                                     </td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
+                                                    <td>${item.price}</td>
+                                                    <td>${total}</td>
                                                 </tr>
                                                 
                                             </>
@@ -68,6 +69,10 @@ const Cart = () => {
             </div>
         </div>
         <div className="summary">
+            {cartItem.map((cart)=>{
+                
+            })}
+            
 
         </div>
     </div>

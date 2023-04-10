@@ -15,7 +15,7 @@ export const ShopContextProvider = ({children}) =>{
 // adding function
     const addToCart = (id) =>{
         const product = cartItem.find(item => item.id === id);
-       console.log(cartItem);
+       
         if(product){
            setCartItem((prev)=> prev.map((item) => item.id === id ? {...item, quantity: item.quantity + 1} : item));
         } else{
@@ -33,7 +33,6 @@ export const ShopContextProvider = ({children}) =>{
 // remove function
     const remove =(id)=>{
         const product = cartItem.find(item => item.id === id);
-        console.log(cartItem);
          if(product){
             setCartItem((prev)=> prev.map((item) => item.id === id ? {...item, quantity: item.quantity - 1} : item));
          }
@@ -59,6 +58,15 @@ export const ShopContextProvider = ({children}) =>{
         }
     }, [selected])
 
+    // calculating each item total cost
+    const quantity = cartItem.map((cart) => cart.quantity)
+    let subTotal = quantity.reduce(function(sum, element){
+        return sum + element;
+    },0)
+   console.log(subTotal);
+
+
+    
         
 
  
@@ -78,7 +86,8 @@ export const ShopContextProvider = ({children}) =>{
         remove,
         selected,
         setSelected,
-        categories
+        categories,
+        
      
         
         
